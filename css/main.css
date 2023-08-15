@@ -1,0 +1,152 @@
+
+:root{
+    --bg-maincolor :#1E202B;
+    --btncolor :#009AD8 ;
+}
+
+h5 ,span{
+    color: #B1C1BF;
+}
+
+.navbar{
+    background-color: var(--bg-maincolor);
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-nav .nav-link.active{
+    border: 3px solid var(--btncolor);
+    border-radius: 20px;
+    padding: 4px 30px;
+    color:  var(--btncolor);
+}
+
+.navbar .nav-link {
+    color: white;
+    transition :all .5s;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+
+.navbar .navbar-nav .nav-link:hover{
+    border: 3px solid var(--btncolor);
+    border-radius: 20px;
+    padding: 4px 30px;
+    color:  var(--btncolor);
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0,0,0,.25) ,rgba(0,0,0,.25))  ,url('../images/rain-drops-window.jpg') ;
+    background-size: 100% 100%;
+    
+}
+#home form {
+    position: relative;
+    
+}
+#home #searchInput{
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 70px;
+    background-color: var(--bg-maincolor);
+    border: none;
+    box-shadow: 0 0 3px 4px #a56fa5;
+}
+   
+
+#home form #searchInput:focus{
+    border: none;
+}
+
+#home #findBtn{
+    position: absolute;
+    bottom: 11px;
+    right: 50px;
+    padding: 10px 45px;
+    border-radius: 20px;
+    background-color: var(--btncolor);
+    color: #fff !important; 
+}
+
+#home .card{
+    margin-block: 70px;
+    background-color: var(--bg-maincolor);
+    color: #fff;
+    box-shadow: 0 0 3px 4px #a56fa5;
+    
+}
+
+#home .row .card{
+    height: 400px;
+}
+
+footer{
+    background-color: #323544;
+}
+
+footer .contact #searchInput {
+    width:70%;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 70px;
+    background-color: var(--bg-maincolor);
+    border: none;
+    position: relative;
+    box-shadow: 0 0 3px 4px #a56fa5;
+}
+
+
+footer form{
+    position: relative;
+}
+
+footer .contact #subscribeBtn  {
+
+    position: absolute;
+    bottom: 11px;
+    left: 364px;
+    padding: 7px 23px;
+    border-radius: 20px;
+    background-color: var(--btncolor);
+    color: #fff !important; 
+}
+
+
+footer .socialIcon{
+    margin-top: 80px;
+    font-size: 20px;
+  
+}
+
+footer .socialIcon a i{
+  
+    padding: 10px;
+    color: var(--btncolor) !important
+}
+
+footer .socialIcon a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: var(--bg-maincolor);
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer .socialIcon a:hover{
+    background-color: var(--btncolor);
+    cursor: pointer;
+  
+}
+
+footer .socialIcon a i:hover{
+    color: #fff !important;
+}
+
