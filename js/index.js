@@ -33,7 +33,7 @@ subscribeBtn.addEventListener('click', function(){
 //!  -------------------- Functions  ----------------------
 
  async function getApiData(country){
-    let https = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=2c66500dd8c4433081d214719231008&q=${country}&days=3`);
+    let https = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=2c66500dd8c4433081d214719231008&q=${country}&days=3`);
     let response = await https.json();
     data = response ;
     console.log(data.forecast.forecastday[1].day.condition.text)
@@ -146,7 +146,7 @@ async function getCurrentDayMonth(){
 
 
   async function getLocation() {
-        
+        let city;
         var bdcApi = "https://api.bigdatacloud.net/data/reverse-geocode-client"
 
         navigator.geolocation.getCurrentPosition(
@@ -170,7 +170,8 @@ async function getCurrentDayMonth(){
               let response = await https.json();
               let dataobjects =response;
               city = dataobjects.city  
-              console.log(city)      // return Giza         
+              console.log (city)
+               return city  // return Giza         
             
     }
   }
